@@ -4,7 +4,7 @@ Content-Type: application/json
 {
     "title" : "Meu primeiro post",
     "content": "conteúdo do post",
-    "user": 7
+    "user": 2
 }
 
 ###

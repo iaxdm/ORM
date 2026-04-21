@@ -12,15 +12,15 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/users/
+DELETE http://localhost:3000/api/users/8
 
 ###
 
-PATCH  http://localhost:3000/api/users/7 
+PATCH  http://localhost:3000/api/users/2
 Content-Type: application/json
 
 {
-    "firstName": "Marco Aurelio",
+    "firstName": "Marco Aureliano",
     "lastName": "Hansen"
 }
 
