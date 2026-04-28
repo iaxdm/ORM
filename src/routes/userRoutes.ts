@@ -5,11 +5,11 @@ const router = Router();
 const userControler = new UserController();
 
 router.post("/", userControler.create);
+router.patch("/:id/toggle", userControler.toggleActive);
+router.patch("/:id", userControler.update);
 router.get("/", userControler.list);
 router.get("/active", userControler.listActive);
-router.get("/:id", userControler.lsitById);
+router.get("/:id", userControler.listById);
 router.delete("/:id", userControler.delete);
-router.patch("/:id", userControler.update);
-router.patch("/:id/toggle", (req, res) => userControler.toggleActive(req, res));
 
 export const userRoutes = router;
